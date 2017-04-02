@@ -1,5 +1,5 @@
-Easyii CMS on Yii 2 Basic Project Template whith authorization and authentication
-============================
+###Easyii CMS on Yii 2 Basic Project Template whith authorization and authentication
+
 
 
 ### Install
