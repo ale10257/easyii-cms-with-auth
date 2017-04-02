@@ -2,15 +2,11 @@ Easyii CMS on Yii 2 Basic Project Template whith authorization and authenticatio
 ============================
 
 
-REQUIREMENTS
-------------
+### Install
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+- Clone this project
+- Run commands ./yii migrate and ./yii init
 
-
-INSTALLATION
-------------
-
-### Install via Composer
+**This is a ALFA project!!!**
 
 
