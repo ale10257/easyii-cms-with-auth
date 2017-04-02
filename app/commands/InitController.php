@@ -41,7 +41,7 @@ class InitController extends Controller
         ])->execute();
 
         if ($res) {
-            echo 'Initialization was successful.' . PHP_EOL . 'Follow the link your-site-name/alex  to access the admin panel' . PHP_EOL;
+            echo 'Initialization was successful.' . PHP_EOL;
         } else {
             return 2;
         }
