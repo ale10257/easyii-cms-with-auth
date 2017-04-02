@@ -1,0 +1,54 @@
+{
+  "name": "ale10257/easyii-cms-with-auth",
+  "description": "Easyii CMS with authentication",
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": "~2.0.5",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "~2.0.0",
+    "yiisoft/yii2-gii": "~2.0.0",
+    "yiisoft/yii2-faker": "~2.0.0",
+    "creocoder/yii2-nested-sets": "0.9.*",
+    "bower-asset/fancybox": "*",
+    "bower-asset/jquery.switcher": "*",
+    "bower-asset/eonasdan-bootstrap-datetimepicker": "^4@dev",
+    "2amigos/yii2-selectize-widget": "~1.0",
+    "yiisoft/yii2-codeception": "*"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "scripts": {
+    "post-create-project-cmd": [
+      "yii\\composer\\Installer::postCreateProject"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "yii\\easyii\\": "admin/easyii"
+    }
+  },
+  "extra": {
+    "yii\\composer\\Installer::postCreateProject": {
+      "setPermission": [
+        {
+          "runtime": "0777",
+          "web/assets": "0777",
+          "yii": "0755",
+          "web/uploads" : "0777"
+        }
+      ],
+      "generateCookieValidationKey": [
+        "config/web.php"
+      ]
+    },
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
