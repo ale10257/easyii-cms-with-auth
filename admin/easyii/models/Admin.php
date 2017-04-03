@@ -6,7 +6,7 @@ use Yii;
 class Admin extends \yii\easyii\components\ActiveRecord implements \yii\web\IdentityInterface
 {
     static $rootUser = [
-        'admin_id' => 0,
+        'admin_id' => -1,
     ];
 
     static $adminUser = [

@@ -1,12 +1,14 @@
 ###Easyii CMS on Yii 2 Basic Project Template whith authorization and authentication
 
-
-
 ### Install
 
-- Clone this project
-- Run commands ./yii migrate and ./yii init
+Clone this project
 
-**This is a ALFA project!!!**
+Run commands 
+- composer update
+- ./yii migrate
+- ./yii init
+
+
 
 

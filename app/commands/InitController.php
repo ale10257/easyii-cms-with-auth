@@ -33,7 +33,7 @@ class InitController extends Controller
         $root_password = sha1($root_password . $auth_key . $password_salt);
 
         $res = $db->createCommand()->insert(Admin::tableName(), [
-            'admin_id' => 0,
+            'admin_id' => -1,
             'username' => 'root',
             'auth_key' => $auth_key,
             'password' => $root_password,
